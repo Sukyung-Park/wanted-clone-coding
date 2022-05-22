@@ -1,9 +1,10 @@
 import "./App.css";
+import RootRoute from "./routes/index";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">테스트</header>
+      <RootRoute />
     </div>
   );
 }
