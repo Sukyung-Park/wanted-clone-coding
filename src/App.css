@@ -1,0 +1,23 @@
+.header__tool {
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header__nav {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  height: 50px;
+}
+body {
+  overflow-x: hidden;
+}
+.searchbtn {
+  fill: #fff;
+  color: #fff;
+}
+.slider {
+  width: 1080px;
+  height: 350px;
+  margin: 0 auto;
+}

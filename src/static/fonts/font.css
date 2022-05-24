@@ -1,0 +1,9 @@
+@font-face {
+  font-family: NotoSansKR;
+  src: url("./NotoSansKR-DemiLight.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  font-family: NotoSansKR;
+}
