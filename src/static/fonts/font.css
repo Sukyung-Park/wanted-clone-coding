@@ -1,9 +1,14 @@
 @font-face {
-  font-family: NotoSansKR;
+  font-family: "NotoSansKR";
   src: url("./NotoSansKR-DemiLight.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../static/fonts/Pretendard-Light.ttf");
+}
+
 * {
-  font-family: NotoSansKR;
+  font-family: "NotoSansKR";
 }
