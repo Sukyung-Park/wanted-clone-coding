@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Search } from "../icons/search.svg";
+import { ReactComponent as Btnsvg } from "../icons/emailbtn.svg";
+import { ReactComponent as Kakao } from "../icons/kakao.svg";
+import { ReactComponent as Facebook } from "../icons/facebook.svg";
 import Logo from "../static/image/logo.jpg";
 import Menu from "../static/image/menu.png";
 import Modal from "../components/Modal/modal";
@@ -57,8 +60,17 @@ const Header = () => {
                 커리어 성장과 행복을 위한 여정 <br />
                 지금 원티드에서 시작하세요.
               </Body>
-              <main> 안녕하세요 </main>에 내용이 입력된다. 리액트 함수형 모달
-              팝업창입니다. 쉽게 만들 수 있어요. 같이 만들어봐요!
+              <EmailText>이메일</EmailText>
+              <EmailBox placeholder="이메일을 입력해 주세요."></EmailBox>
+              <EmailBtn>
+                <Btnsvg />
+                <BtnText>이메일로 계속하기</BtnText>
+              </EmailBtn>
+              <OrText>or</OrText>
+              <OrContinue>다음 계정으로 계속하기</OrContinue>
+              <SocialBox>
+                <Kakao />
+              </SocialBox>
             </Modal>
           </React.Fragment>
 
@@ -68,7 +80,62 @@ const Header = () => {
     </div>
   );
 };
-
+const SocialBox = styled.div`
+  width: 360px;
+  height: 84px;
+`;
+const OrText = styled.div`
+  width: 360px;
+  height: 14px;
+  text-align: center;
+  margin: 13px 0;
+  font-family: "Pretendard";
+  color: #767676;
+  font-weight: 500;
+  font-size: 13px;
+`;
+const OrContinue = styled.div`
+  width: 360px;
+  font-weight: 500;
+  height: 20px;
+  text-align: center;
+  margin: 0 0 17px;
+  font-family: "Pretendard";
+  color: #767676;
+  font-size: 13px;
+`;
+const EmailBtn = styled.button`
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  width: 360px;
+  height: 54px;
+  background-color: #3366ff;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pretendard";
+  border-radius: 27px;
+`;
+const BtnText = styled.div`
+  margin-left: 10px;
+`;
+const EmailText = styled.div`
+  margin: 35px 0 13px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #767676;
+  font-family: "Pretendard";
+`;
+const EmailBox = styled.input`
+  width: 360px;
+  height: 50px;
+  font-size: 13px;
+  padding-left: 10px;
+  border: 1px solid #e1e2e3;
+  border-radius: 5px;
+`;
 const A = styled.a`
   font-weight: bolder;
   font-size: 17px;
