@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Banner1 from "../static/image/banner1.jpg";
 import Banner2 from "../static/image/banner2.jpg";
 import Banner3 from "../static/image/banner3.jpg";
+import { ReactComponent as Prevarrowsvg } from "../icons/prevarrow.svg";
+import { ReactComponent as Nextarrowsvg } from "../icons/nextarrow.svg";
 
 const CenterSlide = () => {
   const settings = {
@@ -17,6 +19,16 @@ const CenterSlide = () => {
     slidesToShow: 1,
     speed: 500,
     arrows: true,
+    prevArrow: (
+      <ArrowButton pos="left">
+        <Prevarrowsvg />
+      </ArrowButton>
+    ),
+    nextArrow: (
+      <ArrowButton pos="right">
+        <Nextarrowsvg />
+      </ArrowButton>
+    ),
   };
 
   return (
@@ -48,7 +60,7 @@ const CenterSlide = () => {
     </SlideContainer>
   );
 };
-
+const ArrowButton = styled.button``;
 const MultiItem = styled.div`
   color: #e67e22;
   opacity: 1;

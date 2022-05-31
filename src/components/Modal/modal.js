@@ -21,9 +21,11 @@ const Modal = (props) => {
           </header>
           <main>{props.children}</main>
           <footer>
-            <button className="close" onClick={close}>
-              close
-            </button>
+            <div className="text" onClick={close}>
+              걱정마세요! 여러분의 지원 활동은 SNS에 노출되지 않습니다. <br />
+              회원가입 시 개인정보 처리방침과 이용약관을 확인하였으며,
+              동의합니다.
+            </div>
           </footer>
         </section>
       ) : null}

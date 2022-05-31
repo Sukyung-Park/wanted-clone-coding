@@ -4,10 +4,13 @@ import { ReactComponent as Search } from "../icons/search.svg";
 import { ReactComponent as Btnsvg } from "../icons/emailbtn.svg";
 import { ReactComponent as Kakao } from "../icons/kakao.svg";
 import { ReactComponent as Facebook } from "../icons/facebook.svg";
+import { ReactComponent as Google } from "../icons/google.svg";
+import { ReactComponent as Apple } from "../icons/apple.svg";
 import Logo from "../static/image/logo.jpg";
 import Menu from "../static/image/menu.png";
 import Modal from "../components/Modal/modal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
@@ -28,13 +31,22 @@ const Header = () => {
             <MenuIcon src={Menu} />
           </Button>
           <A>
-            <LogoIcon src={Logo} />
+            <Link to="/">
+              <LogoIcon src={Logo} />
+            </Link>
           </A>
         </Section>
 
         <Section>
           <Ul>
-            <Li>채용</Li>
+            <Li>
+              <Link
+                to="/employ"
+                style={{ color: "#333", textDecoration: "none" }}
+              >
+                채용
+              </Link>
+            </Li>
             <Li>이벤트</Li>
             <Li>직군별 연봉</Li>
             <Li>이력서</Li>
@@ -68,9 +80,31 @@ const Header = () => {
               </EmailBtn>
               <OrText>or</OrText>
               <OrContinue>다음 계정으로 계속하기</OrContinue>
-              <SocialBox>
-                <Kakao />
-              </SocialBox>
+              <BtnAll>
+                <SocialBox>
+                  <Button1>
+                    <Kakao />
+                  </Button1>
+                </SocialBox>
+
+                <SocialBox>
+                  <Button2>
+                    <Facebook />
+                  </Button2>
+                </SocialBox>
+
+                <SocialBox>
+                  <Button3>
+                    <Google />
+                  </Button3>
+                </SocialBox>
+
+                <SocialBox>
+                  <Button4>
+                    <Apple />
+                  </Button4>
+                </SocialBox>
+              </BtnAll>
             </Modal>
           </React.Fragment>
 
@@ -80,6 +114,51 @@ const Header = () => {
     </div>
   );
 };
+const Button1 = styled.div`
+  width: 56px;
+  height: 56px;
+  background-color: #fee500;
+  margin: 0 auto;
+  border-radius: 28px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+`;
+const Button2 = styled.div`
+  width: 56px;
+  height: 56px;
+  background-color: #1877f2;
+  margin: 0 auto;
+  border-radius: 28px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+`;
+const Button3 = styled.div`
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border: 1px solid #e1e2e3;
+  margin: 0 auto;
+  border-radius: 28px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+`;
+const Button4 = styled.div`
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 28px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+`;
+
+const BtnAll = styled.div`
+  display: flex;
+`;
 const SocialBox = styled.div`
   width: 360px;
   height: 84px;
@@ -170,12 +249,13 @@ const Ul = styled.ul`
   display: flex;
 `;
 const Li = styled.li`
-  margin: 0 10px;
+  margin: 0 15px;
 `;
 const Section = styled.div`
   display: flex;
   font-size: 14px;
   font-weight: 600;
+  color: #333;
 `;
 const WithUS = styled.button`
   background-color: transparent;
@@ -183,6 +263,7 @@ const WithUS = styled.button`
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  color: #333;
 `;
 const Main = styled.div`
   text-align: center;
@@ -191,7 +272,7 @@ const Main = styled.div`
   color: #333;
   font-weight: 600;
   line-height: 30px;
-  margin-top: 40px;
+  // margin-top: 10px;
 `;
 const Body = styled.div`
   margin-top: 16px;

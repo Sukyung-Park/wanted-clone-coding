@@ -66,6 +66,7 @@ const Button = styled.button`
 const Text = styled.div`
   font-size: 16px;
   color: #333333;
-  margin: 0 10px;
+
+  width: 85.18px;
 `;
 export default Profile;

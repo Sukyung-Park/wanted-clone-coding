@@ -161,7 +161,7 @@ const Wrap = styled.div`
   // width: 100%;
   width: 1080px;
   height: 500px;
-  border-bottom: 2px solid #eeeeee;
+  // border-bottom: 2px solid #eeeeee;
   .slick-prev:before {
     opaicty: 1;
     color: black;
