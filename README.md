@@ -29,4 +29,4 @@
 
 2022-06-02
 - api연결
-
+cros에러와 net::ERR_FAILED 에러해결중,,
