@@ -29,6 +29,7 @@ const NowSlide = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
+    arrows: false,
     slidesToScroll: 2,
   };
   return (

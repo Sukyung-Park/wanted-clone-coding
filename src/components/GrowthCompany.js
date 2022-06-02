@@ -17,6 +17,7 @@ const GrowthSlide = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    arrows: false,
   };
   return (
     <div className="Home__Tool">

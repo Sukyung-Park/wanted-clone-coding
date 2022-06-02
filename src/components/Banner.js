@@ -18,7 +18,7 @@ const CenterSlide = () => {
     centerPadding: "215px",
     slidesToShow: 1,
     speed: 500,
-    arrows: true,
+    arrows: false,
     prevArrow: (
       <ArrowButton pos="left">
         <Prevarrowsvg />

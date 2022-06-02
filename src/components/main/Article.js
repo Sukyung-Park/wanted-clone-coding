@@ -57,6 +57,7 @@ const GrowthSlide = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    arrows: false,
   };
   return (
     <HomeTool>

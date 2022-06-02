@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { ReactComponent as Search } from "../icons/search.svg";
 import { ReactComponent as Btnsvg } from "../icons/emailbtn.svg";
@@ -11,8 +11,14 @@ import Menu from "../static/image/menu.png";
 import Modal from "../components/Modal/modal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { infoAction } from "../redux/actions/infoAction";
+import { useDispatch } from "react-redux";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(infoAction.getInfo());
+  }, []);
   // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
   const [modalOpen, setModalOpen] = useState(false);
 

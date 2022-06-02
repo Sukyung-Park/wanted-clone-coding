@@ -16,7 +16,7 @@ const CarrerSlide = () => {
     centerPadding: "130px",
     slidesToShow: 6,
     speed: 500,
-    arrows: true,
+    arrows: false,
     prevArrow: <ArrowButton pos="left"></ArrowButton>,
     nextArrow: <ArrowButton pos="right"></ArrowButton>,
   };
