@@ -29,9 +29,6 @@
 
 2022-06-02
 - api연결
-cros에러와 net::ERR_FAILED 에러해결중,,, => cros 에러를 해결했는데
-<
-![image](https://user-images.githubusercontent.com/104730729/171693197-f8f854a5-786a-4bf7-80a2-f5bc3737a60c.png)
-400 에러가 떴습니다. 
+cros에러와 net::ERR_FAILED 에러해결중,,, => cros 에러를 해결했는데 400 에러가 떴습니다. 
 1. https에서 s를 빼라는 글이 있어서 시도 ==> 실패
 2. 캐시 삭제 시도 ==> 실패 
