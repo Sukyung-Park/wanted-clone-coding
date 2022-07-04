@@ -64,12 +64,24 @@ const GrowthSlide = () => {
             </Nav>
           </ItemTool>
 
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
+          <ItemTool>
+            <Item2></Item2>
+            <Nav>
+              <Box>
+                <Img1 src={Growthimg2} />
+                <div>
+                  <BoxBrand>한글과 컴퓨터</BoxBrand>
+                  <BoxText>IT, 컨텐츠</BoxText>
+                </div>
+              </Box>
+              <div>
+                <FollowButton>팔로우</FollowButton>
+              </div>
+            </Nav>
+          </ItemTool>
+
+          <h3>4</h3>
+
           <div>
             <h3>5</h3>
           </div>
